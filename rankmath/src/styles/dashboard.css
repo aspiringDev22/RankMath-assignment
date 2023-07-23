@@ -1,0 +1,178 @@
+.dashboard-container{
+    background: #f2f6f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: 'SF Pro Display', sans-serif;
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+
+.coin-card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    background: white;
+    height: 240px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: height 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.expanded{
+    height: 390px;
+}
+
+.coin-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coin{
+    display: flex;
+    align-items: center;
+    width: 39%;
+    justify-content: space-between;
+    color: #4c5968;
+    font-weight: 600;
+}
+
+.btcIcon{
+    padding: 10px;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, #ff8f17 0%, #ffc743 100%);
+}
+
+.symbol{
+    color: #aeb8c4;
+    font-weight: 600;
+}
+
+.wallet-money{
+    font-size: 34px;
+    color:#4c5968;
+    font-weight: 700;
+}
+
+.usd-rate{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.usd-price{
+    color:#aeb8c4;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.rate{
+    background-color:#ee225d;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items:center;
+}
+
+.card-dropdown{
+    align-self: center;
+}
+
+.card-dropdown button{
+    border: none;
+    background: none;
+    color: #aeb8c1;
+    font-size: 33px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-dropdown button:hover{
+    transform: rotate(360deg) scale(1.8);
+}
+
+.card-dropdown button:active{
+    transform: scale(1.2);
+}
+
+.buy-and-sell{
+    margin-top: 20px;
+    align-self: center;
+    display: flex;
+}
+
+.action-button{
+    background: none;
+    border: none;
+    height: 100px;
+    box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: #4c5968;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.action-button:active{
+  transform: scale(1.1);
+}
+
+.buy-and-sell .icon:hover, .buysellBtns .icon:hover{
+transform: rotate(30deg) scale(1.2);
+transition: all 0.3s ease-in-out;
+}
+
+.icon{
+    /* background: #000; */
+    padding: 10px;
+    border-radius: 50%;
+    color: white;    
+}
+
+.buyBTC{
+    background-image: linear-gradient(0deg, #1d71f1 0%, #17c7fb 100%);
+}
+
+.sellBTC{
+    background-image: linear-gradient(0deg, #fa23a2 0%, #ff677c 100%);
+}
+
+/* Sections for buttons which were used without dropdown */
+.buysellBtns{
+    margin: 10px 0px 25px 0px;
+    width: 350px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.buysellBtns .action-button{
+    width: 140px;
+    background: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+@media screen and (max-width: 767px) {
+.dashboard-container {
+      min-height: 82vh;
+    }
+  }
